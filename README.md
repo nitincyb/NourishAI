@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # NourishAI — Nutrition Tracking App
 
 A clean, fast nutrition tracker built with React, TypeScript, and Vite. Tracks meals, monitors macros, and provides practical health insights.
@@ -91,3 +92,7 @@ npx vercel
 ## License
 
 MIT
+=======
+# NourishAI
+The prompt a thon challange code.
+>>>>>>> 53c7f789312cfa86f0000333f2391bbaccc349f4
