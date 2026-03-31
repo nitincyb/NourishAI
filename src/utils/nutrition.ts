@@ -3,7 +3,7 @@
  * All functions are stateless and side-effect-free for easy testing.
  */
 
-import type { FoodItem, HealthBadge, NutrientTotals, LoggedMeal, DailyGoals, WeekDataPoint } from '../types';
+import type { HealthBadge, NutrientTotals, LoggedMeal, DailyGoals, WeekDataPoint } from '../types';
 
 /** Score thresholds for health classification */
 const HEALTHY_THRESHOLD = 70;

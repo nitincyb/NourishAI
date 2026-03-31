@@ -3,7 +3,7 @@ import { persist, createJSONStorage } from 'zustand/middleware';
 import type { LoggedMeal, UserProfile, Achievement, MealType } from '../types';
 import type { FoodItem } from '../types';
 import { getHealthBadge, calculateXP, calculateLevel, calculateStreak, aggregateNutrients, generateAlerts, generateWeekData } from '../utils/nutrition';
-import { GOAL_PRESETS, DEFAULT_ACHIEVEMENTS, STORE_KEY, XP_PER_LEVEL } from '../utils/constants';
+import { GOAL_PRESETS, DEFAULT_ACHIEVEMENTS, STORE_KEY } from '../utils/constants';
 
 interface AppState {
   user: UserProfile;
@@ -51,7 +51,7 @@ export const useStore = create<AppState>()(
         };
 
         const today = new Date().toDateString();
-        const { lastLogDate, streak, xp, level, achievements } = get();
+        const { lastLogDate, streak, xp, achievements } = get();
 
         const newStreak = calculateStreak(streak, lastLogDate, today);
         const earnedXP = calculateXP(food.healthScore);
